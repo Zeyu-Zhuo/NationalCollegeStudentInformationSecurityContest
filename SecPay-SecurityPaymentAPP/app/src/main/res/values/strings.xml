@@ -1,0 +1,43 @@
+<resources>
+    <!--new pay-->
+    <string name="app_name">SecPay</string>
+    <string name="app_slogan">为更安全的支付而生！</string>
+    <string name="program_name">SecPay</string>
+    <string name="program_name_double_line">SecPay</string>
+    <string name="copyright">版权所有 © 2018</string>
+    <string name="networkFalse">网络状态错误，请检查您的网络连接</string>
+    <string name="loginFailed">帐号或密码错误</string>
+    <string name="networkError">网络出错，请重新登陆</string>
+    <string name="timeout">连接超时，请重新登陆</string>
+    <string name="blankText">帐号和密码不能为空</string>
+    <string name="aboutMeTitle">关于我们</string>
+    <string name="aboutMeMsg">
+        更安全的支付方式，保障你的财产安全！\n\n
+        Release版:1.0\n
+        Copyright © 2018 by SecPay.\n
+        All rights reserved.\n
+    </string>
+    <string name="autoLogin">自动登录</string>
+    <string name="configText">配置信息：</string>
+    <string name="logoutButton">登出</string>
+    <string name="copyright_powerby">版权所有 © 2018\n
+        Power by SecPay.
+    </string>
+    <string name="security_reminder">安全提醒</string>
+    <string name="submit_tip">（请点击确认是否为本人所为！）</string>
+    <string name="no_security_tip">暂无异常信息！</string>
+    <string name="submit_title">请再次确认信息</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--账单-->
+    <!--<string name="hello_world">Hello world!</string>-->
+    <string name="pull_header_hint_normal">下拉刷新</string>
+    <string name="pull_header_hint_ready">松开刷新数据</string>
+    <string name="pull_header_hint_loading">正在加载...</string>
+    <string name="pull_header_last_time">上次更新时间：</string>
+    <string name="pull_footer_hint_normal">查看更多...</string>
+    <string name="pull_footer_hint_ready">松开载入更多</string>
+    <string name="pay_successful">交易成功</string>
+
+</resources>

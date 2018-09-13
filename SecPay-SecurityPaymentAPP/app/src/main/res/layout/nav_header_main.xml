@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/aboutMe"
+        android:layout_gravity="top|start"
+        android:layout_marginTop="35dp"
+        android:layout_marginStart="10dp"
+        android:src="@mipmap/logo"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+    <ImageView
+        android:layout_marginTop="60dp"
+        android:id="@+id/usr_avatar"
+        android:src="@mipmap/avatar"
+        android:layout_width="90dp"
+        android:layout_height="90dp" />
+
+    <TextView
+        android:id="@+id/usr_name"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:id="@+id/usr_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:text="你很懒，什么都没留下！"
+        android:id="@+id/usr_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.unstoppable.submitbuttonview.SubmitButton
+        android:id="@+id/logoutButton"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:theme="@style/themeColor"
+        android:layout_height="40dp"
+        android:layout_width="90dp"
+        app:buttonText="登出"
+        app:buttonColor="@color/alipayBlue"
+        app:succeedColor="@color/alipayBlue"
+        />
+
+    <TextView
+        android:text="@string/copyright_powerby"
+        android:layout_marginTop="155dp"
+        android:gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ec="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.jetradar.desertplaceholder.DesertPlaceholder
+        android:id="@+id/placeholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            android:layout_weight="3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:text="扫一扫"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp" />
+
+            <Button
+                android:text="付款码"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="150dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_weight="6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <com.lypeer.googleioclock.GoogleClock
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            />
+
+            <com.ramotion.expandingcollection.ECPagerView
+                android:id="@+id/ec_pager_element"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ec:cardHeaderHeightExpanded="200dp"
+                ec:cardHeight="150dp"
+                ec:cardWidth="300dp" />
+
+            <com.jiacyer.newpay.view.ItemsCountView
+                android:id="@+id/items_count_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:clipChildren="false"
+                android:orientation="horizontal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

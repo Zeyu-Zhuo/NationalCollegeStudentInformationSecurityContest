@@ -1,0 +1,6 @@
+This file only list the main source code of the server side.
+Because the server is implemented by the Laravel framework,a lote of source code for the frome work part is not attached here
+
+Server environment£ºWindows/Linux+Apache2+MySQL+PHP
+Framework version£ºLaravel5.5
+If you want to deploy the server, please follow the above configuration¡£

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+<!--new pay-->
+    <color name="themeGreen">#19CC95</color>
+    <color name="themeDeepGreen">#138f69</color>
+    <color name="themeGray">#c1c1c1</color>
+    <color name="themeBlack">#313131</color>
+    <color name="colorListDivider">#e6e6e6</color>
+    <color name="transparent">#00ffffff</color>
+
+<!--主界面-->
+    <color name="alipayColor">#1b82d2</color>
+    <color name="alipayBlue">#1984D1</color>
+    <color name="colorffffff">#FFFFFF</color>
+    <color name="color000000">#000000</color>
+    <color name="colorBlack">#000000</color>
+    <color name="pressGray">#b3b3b3</color>
+    <color name="white">#ffffff</color>
+
+    <!--账单-->
+    <color name="red_light">#ffff4444</color>
+    <color name="green_light">#ff99cc00</color>
+    <color name="orange_light">#ffffbb33</color>
+    <color name="blue_light">#ff33b5e5</color>
+
+    <color name="color_f4f4f4">#f4f4f4</color>
+    <color name="color_646464">#646464</color>
+    <color name="color_d7d7d7">#d7d7d7</color>
+
+    <!---->
+
+</resources>

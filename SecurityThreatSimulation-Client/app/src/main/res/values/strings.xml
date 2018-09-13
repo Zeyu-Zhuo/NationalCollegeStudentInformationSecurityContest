@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">攻击端</string>
+    <string name="stopButton">停止攻击</string>
+    <string name="accessibility_des">屏幕辅助功能</string>
+</resources>

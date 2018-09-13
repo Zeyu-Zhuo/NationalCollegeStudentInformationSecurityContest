@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="服务器IP"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/server"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stopButton"
+        />
+
+    <Button
+        android:id="@+id/cameraButton"
+        android:text="相机"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--<SurfaceView-->
+        <!--android:id="@+id/surfaceView"-->
+        <!--android:layout_width="0.1dp"-->
+        <!--android:layout_height="0.1dp" />-->
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/imageView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp" />-->
+
+</LinearLayout>

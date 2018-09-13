@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.jiacyer.attackclient">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:persistent="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar">
+
+        <activity
+            android:name=".face.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".control.AttackActivity" />
+
+    <!-- 探测的后台服务 -->
+    <service android:name=".service.DetectService">
+        <!--<intent-filter android:priority="2000">-->
+            <!---->
+        <!--</intent-filter>-->
+    </service>
+
+        <receiver android:name=".service.BootReceiver"
+            android:process="com.jiacyer.bootreceiver">
+            <intent-filter android:priority="2222">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+    <!-- 相机相关的权限 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- 开启启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+    <!-- 网络相关的权限 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <!-- 屏幕常亮 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"
+        tools:ignore="ProtectedPermissions"/>
+
+</manifest>

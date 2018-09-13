@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">远程攻击者</string>
+    <string name="title_activity_main">远程攻击端---二维码生成器</string>
+</resources>

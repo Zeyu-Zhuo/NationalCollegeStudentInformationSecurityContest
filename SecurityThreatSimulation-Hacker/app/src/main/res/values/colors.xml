@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="fontGray">#a9a9a8</color>
+    <color name="alipayColor">#1b82d2</color>
+    <color name="colorBlack">#000000</color>
+    <color name="themeGreen">#19CC95</color>
+    <color name="themeDeepGreen">#138f69</color>
+    <color name="themeGray">#c1c1c1</color>
+    <color name="themeBlack">#313131</color>
+    <color name="fontColor">#333333</color>
+</resources>

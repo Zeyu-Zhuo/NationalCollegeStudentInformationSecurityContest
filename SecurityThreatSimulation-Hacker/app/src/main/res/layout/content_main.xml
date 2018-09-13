@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jiacyer.attacker.control.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="服务器IP"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/server"
+            android:gravity="center"
+            android:maxLines="1"
+            android:layout_weight="4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <TextView
+        android:text="AttackID:"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:spinnerMode="dialog"
+        android:id="@+id/attack_id_list"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <TextView
+        android:text="QRCode:"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:spinnerMode="dialog"
+        android:id="@+id/qrcode_list"
+        style="@style/spinner_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageButton-->
+        <!--android:id="@+id/fresh"-->
+        <!--android:src="@mipmap/fresh"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:id="@+id/qrcode_generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mtf_labelColor="#666666"
+        app:mtf_image="@drawable/ic_text_grey600_24dp"
+        >
+
+        <EditText
+            android:id="@+id/qrcode_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="18"
+            android:hint="手动输入QRcode"
+            android:textColor="@color/fontColor"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/generate"
+            android:text="生成"
+            android:background="@drawable/button_selector_left"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <Button
+            android:id="@+id/clear"
+            android:text="清除"
+            android:background="@drawable/button_selector_right"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="8dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <com.lypeer.googleioclock.GoogleClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        />
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="0dp">
+
+        <com.unstoppable.submitbuttonview.SubmitButton
+            android:id="@+id/loginButton"
+            android:layout_gravity="center"
+            android:theme="@style/themeColor"
+            android:layout_height="40dp"
+            android:layout_width="90dp"
+            />
+
+        <TextView
+            android:id="@+id/loginBtnText"
+            android:text="刷新"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <TextView
+        android:text="版权所有 © 2018"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="10sp" />
+</LinearLayout>
